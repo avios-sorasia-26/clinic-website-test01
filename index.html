@@ -4,10 +4,81 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>テストサイト</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>ブランチで変更中</h1>
-  <p>GitHub Pages テスト用ページ</p>
-  <img src="images/test.jpg" alt="test image" style="max-width: 320px;">
+
+<header>
+  <div class="container nav">
+    <div class="brand">
+      <span class="badge">C</span>
+      <span>クリニック テスト</span>
+    </div>
+    <nav>
+      <a href="#services">診療案内</a>
+      <a href="#access">アクセス</a>
+      <a href="#contact">お問い合わせ</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="hero">
+    <div class="hero-card">
+      <h1>ブランチで変更中（テスト環境）</h1>
+      <p>GitHub Pages と GitHub 操作のテスト用トップページです。ここでデザイン・更新手順を確認し、本番へ移行します。</p>
+
+      <div class="cta">
+        <a class="btn primary" href="#contact">WEB予約（仮）</a>
+        <a class="btn" href="#services">診療内容を見る</a>
+      </div>
+
+      <div style="margin-top:16px;">
+        <figure>
+          <img src="images/test.jpg" alt="テスト画像">
+        </figure>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h2>診療時間</h2>
+        <p>平日 9:00-12:00 / 16:00-19:00（仮）</p>
+      </div>
+      <div class="card">
+        <h2>予約</h2>
+        <p>WEB予約・電話予約の導線をテストします。</p>
+      </div>
+      <div class="card">
+        <h2>お知らせ</h2>
+        <p>ここに最新情報（テスト）を掲載します。</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="card">
+    <h2>診療案内（テスト）</h2>
+    <p>内科／生活習慣病／予防接種／健診などの情報ブロックをここに配置します（本番で差し替え）。</p>
+  </section>
+
+  <section id="access" class="card" style="margin-top:12px;">
+    <h2>アクセス（テスト）</h2>
+    <p>住所・地図・駐車場情報などをここに配置します（本番で差し替え）。</p>
+  </section>
+
+  <section id="contact" class="card" style="margin-top:12px;">
+    <h2>お問い合わせ（テスト）</h2>
+    <p>電話番号や問い合わせ導線の表示テストをします（本番で差し替え）。</p>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div>© Clinic Website Test</div>
+  </div>
+</footer>
+
 </body>
 </html>
