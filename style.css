@@ -234,3 +234,26 @@ hr.sep{
   .nav{ flex-wrap:wrap; }
   .nav a{ margin-left:0; margin-right:12px; }
 }
+/* --- hero slider --- */
+.slider{
+  position:relative;
+  border-radius:18px;
+  overflow:hidden;
+  border:1px solid var(--border);
+  background:var(--card-strong);
+  aspect-ratio: 16 / 10;
+}
+
+.slide{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  opacity:0;
+  transition:opacity 900ms ease;
+}
+
+.slide.is-active{
+  opacity:1;
+}
