@@ -111,6 +111,27 @@
     <div>© Ieda Naika (Test)</div>
   </div>
 </footer>
+<script>
+  (function(){
+    const slides = Array.from(document.querySelectorAll('.slider .slide'));
+    if (!slides.length) return;
+
+    let i = 0;
+    const intervalMs = 3500; // 切替間隔（ミリ秒）
+
+    // 画像が1枚しかない場合は何もしない
+    if (slides.length === 1) {
+      slides[0].classList.add('is-active');
+      return;
+    }
+
+    setInterval(() => {
+      slides[i].classList.remove('is-active');
+      i = (i + 1) % slides.length;
+      slides[i].classList.add('is-active');
+    }, intervalMs);
+  })();
+</script>
 
 </body>
 </html>
