@@ -7,17 +7,17 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 <header>
   <div class="container nav">
     <div class="brand">
       <span class="badge">C</span>
-      <span>クリニック テスト</span>
+      <span>家田内科（テスト）</span>
     </div>
     <nav>
       <a href="#services">診療案内</a>
+      <a href="#hours">診療時間</a>
+      <a href="#news">お知らせ</a>
       <a href="#access">アクセス</a>
-      <a href="#contact">お問い合わせ</a>
     </nav>
   </div>
 </header>
@@ -26,57 +26,87 @@
 
   <section class="hero">
     <div class="hero-card">
-      <h1>ブランチで変更中（テスト環境）</h1>
-      <p>GitHub Pages と GitHub 操作のテスト用トップページです。ここでデザイン・更新手順を確認し、本番へ移行します。</p>
+      <div class="kicker">テスト環境 / GitHub Pages</div>
+      <h1>地域に根ざした内科として、安心できる医療を。</h1>
+      <p>
+        このページはデザインと運用手順（更新・画像差替え・PR）を検証するためのテストサイトです。
+        本番では内容（院名表記・診療内容・予約導線・アクセス）を確定させて移行します。
+      </p>
 
       <div class="cta">
         <a class="btn primary" href="#contact">WEB予約（仮）</a>
         <a class="btn" href="#services">診療内容を見る</a>
       </div>
 
-      <div style="margin-top:16px;">
+      <div class="hero-media">
         <figure>
-          <img src="images/test.jpg" alt="テスト画像">
+          <img src="images/test.jpg" alt="院内・外観のテスト画像">
         </figure>
+
+        <div class="small-box" id="contact">
+          <strong style="display:block; margin-bottom:8px;">本番で差し替える項目（例）</strong>
+          <ul class="list">
+            <li>予約：メディカル革命へリンク</li>
+            <li>電話番号・住所・地図</li>
+            <li>診療時間／休診日</li>
+          </ul>
+          <hr class="sep">
+          <div style="font-size:14px; color:var(--muted);">
+            テストでは「作る→更新→戻す」が体験できれば十分です。
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="grid">
+    <div class="grid" id="hours">
       <div class="card">
-        <h2>診療時間</h2>
-        <p>平日 9:00-12:00 / 16:00-19:00（仮）</p>
+        <h2>診療時間（仮）</h2>
+        <p>平日 9:00-12:00 / 16:00-19:00</p>
       </div>
       <div class="card">
-        <h2>予約</h2>
-        <p>WEB予約・電話予約の導線をテストします。</p>
+        <h2>予約導線（仮）</h2>
+        <p>本番では「WEB予約」ボタンをメディカル革命へ接続します。</p>
       </div>
       <div class="card">
-        <h2>お知らせ</h2>
-        <p>ここに最新情報（テスト）を掲載します。</p>
+        <h2>初診の方へ（仮）</h2>
+        <p>持ち物・受付方法などの案内ブロックを配置します。</p>
       </div>
     </div>
   </section>
 
-  <section id="services" class="card">
+  <section class="card section" id="services">
     <h2>診療案内（テスト）</h2>
-    <p>内科／生活習慣病／予防接種／健診などの情報ブロックをここに配置します（本番で差し替え）。</p>
+    <p>本番では、診療項目を“短く・分かりやすく”並べます。</p>
+    <ul class="list">
+      <li>内科（生活習慣病：高血圧・脂質異常症・糖尿病 など）</li>
+      <li>発熱・かぜ症状（運用に応じて案内文を調整）</li>
+      <li>予防接種／健診（自費メニュー含む）</li>
+    </ul>
   </section>
 
-  <section id="access" class="card" style="margin-top:12px;">
+  <section class="card section" id="news">
+    <h2>お知らせ（テスト）</h2>
+    <ul class="list">
+      <li>2026/01/09：テストサイト更新（PR→マージ）</li>
+      <li>ここに休診案内などを掲載（本番で差し替え）</li>
+    </ul>
+  </section>
+
+  <section class="card section" id="access">
     <h2>アクセス（テスト）</h2>
-    <p>住所・地図・駐車場情報などをここに配置します（本番で差し替え）。</p>
-  </section>
-
-  <section id="contact" class="card" style="margin-top:12px;">
-    <h2>お問い合わせ（テスト）</h2>
-    <p>電話番号や問い合わせ導線の表示テストをします（本番で差し替え）。</p>
+    <p>本番では住所・駐車場・最寄り案内・Google Mapリンクを掲載します。</p>
+    <ul class="list">
+      <li>住所（仮）：春日井市 ○○</li>
+      <li>駐車場：あり（仮）</li>
+      <li>地図：Google Map へリンク（仮）</li>
+    </ul>
   </section>
 
 </main>
 
-<footer>
+<footer class="footer">
   <div class="container">
-    <div>© Clinic Website Test</div>
+    <div>© Ieda Naika (Test)</div>
   </div>
 </footer>
 
